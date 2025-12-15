@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТочкаСхода - Бот знакомств в Telegram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" class="theme-switch">
+        <label for="theme-switch" class="theme-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="theme-ball"></span>
+        </label>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <div class="logo-pulse"></div>
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-name">ТочкаСхода</span>
+                        <span class="logo-tagline">бот знакомств</span>
+                    </div>
+                </div>
+                
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="#hero" class="nav-link active">Главная</a></li>
+                        <li><a href="#about" class="nav-link">О нас</a></li>
+                        <li><a href="#updates" class="nav-link">Обновления</a></li>
+                        <li><a href="#services" class="nav-link">Наши боты</a></li>
+                        <li><a href="#contact" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="https://t.me/tochkas_hoda_bot" class="btn btn-small btn-glow" target="_blank">
+                        <i class="fab fa-telegram"></i> Попробовать
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-name">ТочкаСхода</span>
+                    </div>
+                </div>
+                <button class="mobile-menu-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="#hero" class="mobile-nav-link active">Главная</a></li>
+                    <li><a href="#about" class="mobile-nav-link">О нас</a></li>
+                    <li><a href="#updates" class="mobile-nav-link">Обновления</a></li>
+                    <li><a href="#services" class="mobile-nav-link">Наши боты</a></li>
+                    <li><a href="#contact" class="mobile-nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-footer">
+                <a href="https://t.me/tochkas_hoda_bot" class="btn btn-primary btn-block" target="_blank">
+                    <i class="fab fa-telegram"></i> Перейти в бота
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            <span class="badge-text">✨ Новый дизайн</span>
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            <span class="gradient-text">ТочкаСхода</span>
+                            <span class="emoji">🤖</span>
+                        </h1>
+                        
+                        <p class="hero-subtitle">
+                            Знакомства в Telegram, <span class="text-highlight">переосмысленные</span>
+                        </p>
+                        
+                        <p class="hero-description">
+                            Искусственный интеллект, который действительно понимает, кого вы ищете. 
+                            Безопасные, осмысленные знакомства с реальными людьми.
+                        </p>
+                        
+                        <div class="hero-buttons">
+                            <a href="https://t.me/tochkas_hoda_bot" class="btn btn-primary btn-glow" target="_blank">
+                                <i class="fab fa-telegram"></i> Начать знакомиться
+                            </a>
+                            <a href="#updates" class="btn btn-secondary">
+                                <i class="fas fa-sparkles"></i> Что нового?
+                            </a>
+                        </div>
+                        
+                        <div class="hero-features">
+                            <div class="feature">
+                                <i class="fas fa-brain"></i>
+                                <span>Умный AI-подбор</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>100% безопасность</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bolt"></i>
+                                <span>Мгновенные чаты</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image">
+                        <div class="iphone-mockup">
+                            <!-- iPhone корпус -->
+                            <div class="iphone-frame">
+                                <div class="iphone-notch">
+                                    <div class="speaker"></div>
+                                    <div class="camera"></div>
+                                </div>
+                                <div class="iphone-screen">
+                                    <div class="bot-interface">
+                                        <div class="chat-header">
+                                            <div class="chat-avatar">
+                                                <div class="avatar-img">
+                                                    <i class="fas fa-robot"></i>
+                                                </div>
+                                            </div>
+                                            <div class="chat-info">
+                                                <h4>ТочкаСхода</h4>
+                                                <p>онлайн • AI бот</p>
+                                            </div>
+                                            <div class="chat-actions">
+                                                <i class="fas fa-phone"></i>
+                                                <i class="fas fa-video"></i>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="chat-messages">
+                                            <div class="message bot">
+                                                <div class="message-content">
+                                                    Привет! Нашел для тебя идеальную пару! 💫
+                                                    <div class="message-time">14:20</div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="message user">
+                                                <div class="message-content">
+                                                    Показывай! 👀
+                                                    <div class="message-time">14:21</div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="message bot">
+                                                <div class="message-content">
+                                                    <div class="match-card">
+                                                        <!-- ТВОЯ ФОТКА ЗДЕСЬ! -->
+                                                        <div class="profile-avatar">
+                                                            <div class="profile-avatar-img">
+                                                                <i class="fas fa-user-circle"></i>
+                                                            </div>
+                                                            <div class="profile-status"></div>
+                                                        </div>
+                                                        <div class="match-info">
+                                                            <h5>Александр</h5>
+                                                            <p class="match-age">25 лет</p>
+                                                            <p class="match-bio">Разработчик, любит путешествия и технологии</p>
+                                                            <div class="match-tags">
+                                                                <span>🎮 Игры</span>
+                                                                <span>🚀 Космос</span>
+                                                                <span>🎵 Рок</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="message-time">14:22</div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="message bot">
+                                                <div class="message-content">
+                                                    Совпадение по интересам: 94% 🤯
+                                                    <div class="message-time">14:22</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="chat-actions-bar">
+                                            <button class="action-btn dislike">
+                                                <i class="fas fa-times"></i>
+                                            </button>
+                                            <button class="action-btn superlike">
+                                                <i class="fas fa-star"></i>
+                                            </button>
+                                            <button class="action-btn like">
+                                                <i class="fas fa-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="scroll-text">Листай дальше</div>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-title-bg">Почему мы?</span>
+                        <span class="section-title-main">Искусственный интеллект для искренних знакомств</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Мы не просто бот — мы технология, которая меняет подход к онлайн-знакомствам
+                    </p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-card-inner">
+                            <div class="about-icon">
+                                <i class="fas fa-brain"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <div class="about-number">01</div>
+                            <h3>AI-алгоритм подбора</h3>
+                            <p>Наш нейросетевой алгоритм анализирует тысячи параметров, чтобы найти идеальное совпадение, а не просто случайного человека.</p>
+                            <div class="about-emoji">🤖💞</div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-card-inner">
+                            <div class="about-icon">
+                                <i class="fas fa-user-shield"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <div class="about-number">02</div>
+                            <h3>Верификация и безопасность</h3>
+                            <p>Каждый профиль проходит многоуровневую проверку. Мы заботимся о вашей безопасности и конфиденциальности.</p>
+                            <div class="about-emoji">🛡️✅</div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-card-inner">
+                            <div class="about-icon">
+                                <i class="fas fa-gamepad"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <div class="about-number">03</div>
+                            <h3>Игровой формат</h3>
+                            <p>Знакомства становятся увлекательной игрой с daily-задачами, бейджами достижений и интересными механиками.</p>
+                            <div class="about-emoji">🎮🏆</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="98">98</div>
+                        <div class="stat-label">Точность подбора</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="99">99</div>
+                        <div class="stat-label">Удовлетворенность</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="100">100</div>
+                        <div class="stat-label">Безопасность</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Updates Section -->
+        <section id="updates" class="updates">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-title-bg">Обновления</span>
+                        <span class="section-title-main">Что нового в боте?</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Следите за развитием проекта и новыми функциями
+                    </p>
+                </div>
+                
+                <!-- Обновления будут добавляться сюда через JavaScript -->
+                <div class="updates-container" id="updatesContainer">
+                    <!-- Динамически загружается из script.js -->
+                </div>
+                
+                <div class="updates-archive">
+                    <button class="btn btn-outline btn-sparkle" id="showMoreUpdates">
+                        <i class="fas fa-history"></i> 
+                        <span>Архив обновлений</span>
+                        <div class="sparkle-container">
+                            <div class="sparkle"></div>
+                            <div class="sparkle"></div>
+                            <div class="sparkle"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-title-bg">Сервисы</span>
+                        <span class="section-title-main">Наши боты в Telegram</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Экосистема для разных типов взаимодействий
+                    </p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Основной бот -->
+                    <div class="service-card featured">
+                        <div class="service-card-inner">
+                            <div class="service-icon">
+                                <i class="fas fa-heart"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <div class="service-badge">
+                                <i class="fas fa-bolt"></i> Основной
+                            </div>
+                            <h3>ТочкаСхода: Знакомства</h3>
+                            <p>Умный бот для поиска настоящих знакомств. Искусственный интеллект, безопасность и игровой формат.</p>
+                            <div class="service-features">
+                                <span><i class="fas fa-check-circle"></i> AI-подбор пар</span>
+                                <span><i class="fas fa-check-circle"></i> Верификация профилей</span>
+                                <span><i class="fas fa-check-circle"></i> Умный подбор</span>
+                            </div>
+                            <a href="https://t.me/tocxhaSxoda_oficial" class="btn btn-primary btn-glow btn-block" target="_blank">
+                                <i class="fab fa-telegram"></i> Перейти в бота
+                            </a>
+                        </div>
+                        <div class="card-shine"></div>
+                    </div>
+                    
+                    <!-- Дополнительные боты -->
+                    <div class="service-card">
+                        <div class="service-card-inner">
+                            <div class="service-icon">
+                                <i class="fas fa-users"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <div class="service-badge coming-soon">
+                                <i class="fas fa-clock"></i> Q2 2026
+                            </div>
+                            <h3>ТочкаСхода: Сообщества</h3>
+                            <p>Бот для поиска тематических сообществ по интересам. Находите единомышленников в своем городе.</p>
+                            <div class="service-features">
+                                <span><i class="fas fa-clock"></i> Поиск сообществ</span>
+                                <span><i class="fas fa-clock"></i> Организация встреч</span>
+                                <span><i class="fas fa-clock"></i> Ивенты и мероприятия</span>
+                            </div>
+                            <button class="btn btn-secondary btn-block" disabled>
+                                <i class="fas fa-hourglass-half"></i> Скоро будет
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-card-inner">
+                            <div class="service-icon">
+                                <i class="fas fa-calendar-star"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <div class="service-badge coming-soon">
+                                <i class="fas fa-clock"></i> Q3 2026
+                            </div>
+                            <h3>ТочкаСхода: События</h3>
+                            <p>Платформа для организации и поиска мероприятий. От концертов до бизнес-встреч.</p>
+                            <div class="service-features">
+                                <span><i class="fas fa-clock"></i> Календарь событий</span>
+                                <span><i class="fas fa-clock"></i> Билеты и регистрация</span>
+                                <span><i class="fas fa-clock"></i> Рекомендации</span>
+                            </div>
+                            <button class="btn btn-secondary btn-block" disabled>
+                                <i class="fas fa-hourglass-half"></i> В разработке
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="section-title-bg">Контакты</span>
+                        <span class="section-title-main">Свяжитесь с нами</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Мы всегда рады обратной связи и сотрудничеству
+                    </p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-telegram"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <h3>Канал с новостями</h3>
+                            <p>Подписывайтесь, чтобы быть в курсе всех обновлений и анонсов</p>
+                            <a href="https://t.me/tocxhaSxoda_oficial" class="contact-link" target="_blank">
+                                <span>@tocxha_Sxoda</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-headset"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <h3>Техподдержка</h3>
+                            <p>Помощь по использованию бота, ответы на вопросы и решение проблем</p>
+                            <a href="https://t.me/TochkaSkhoda_manager" class="contact-link" target="_blank">
+                                <span>Написать в поддержку</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-lightbulb"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <h3>Для партнеров</h3>
+                            <p>Предложения по сотрудничеству, интеграциям и партнерским программам</p>
+                            <a href="https://t.me/TochkaSkhoda_manager" class="contact-link" target="_blank">
+                                <span>Стать партнером</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-name">ТочкаСхода</span>
+                            <span class="logo-tagline">будущее знакомств</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Мы создаем технологии для осмысленных человеческих взаимодействий. 
+                        Присоединяйтесь к будущему знакомств.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://t.me/tocxhaSxoda_oficial" class="social-link" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Навигация</h4>
+                        <ul>
+                            <li><a href="#hero">Главная</a></li>
+                            <li><a href="#about">О проекте</a></li>
+                            <li><a href="#updates">Обновления</a></li>
+                            <li><a href="#services">Боты</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Проект</h4>
+                        <ul>
+                            <li><a href="https://t.me/tochkas_hoda_bot" target="_blank">Бот знакомств</a></li>
+                            <li><a href="#">Дорожная карта</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Блог</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Помощь</h4>
+                        <ul>
+                            <li><a href="https://t.me/tochkas_hoda_support" target="_blank">Поддержка</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Условия использования</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 ТочкаСхода. Все права защищены.</p>
+                <p class="footer-note">Сделано с <i class="fas fa-heart"></i> для настоящих знакомств</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+        <div class="btn-glow"></div>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
